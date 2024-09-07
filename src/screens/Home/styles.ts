@@ -3,11 +3,11 @@ import { StyleSheet } from "react-native"
 export const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#131016',
+    backgroundColor: '#FDFCFE',
     padding: 24
   },
   eventName: {
-    color: '#FDFCFE',
+    color: '#131016',
     fontSize: 24,
     fontWeight: 'bold',
     marginTop: 56
