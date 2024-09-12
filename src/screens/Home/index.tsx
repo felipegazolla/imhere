@@ -14,6 +14,10 @@ export function Home() {
       return Alert.alert("Participante já existe", "Já existe um participante com este nome.")
     }
 
+    if (participantName.length <= 0) {
+      return Alert.alert("Digite o nome do participante")
+    }
+
     setParticipants(prevState =>[...prevState, participantName])
     setParticipantName('')
   }
@@ -29,8 +33,6 @@ export function Home() {
         style: 'cancel'
       }
     ])
-
-    console.log(`Voce clicou em remover o participante ${name}`)
   }
 
   return (
